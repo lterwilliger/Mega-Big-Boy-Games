@@ -1,64 +1,24 @@
-$(document).ready(function () {
-  console.log("doc is ready");
- 
-  let revName; 
+$(function () {
+  console.log("ready!");
 
-
-  $
-    ("#btnGetFacts").click(function (){
-
-      // handle it if input is blank
-
-      let userName = $("#userName").val();
-      let coolFacts = generateCoolNameFacts(userName); 
-
-      console.log('you clicked the button');
-      console.log('from ln 12', generateCoolNameFacts(userName));
-      
-      $("#coolNameFactsOutput").html(coolFacts);
+  const classCharlies = [
+    "https://barrycumbie.github.io/legendary-waddle/",
+    "https://codepen.io/barrycumbie/pen/GROaGBQ",
+    "https://gist.github.com/barrycumbie/e2491ce65ed1b8711ce78fc897028597"
+  ];
   
-
-
-    });
-
+  $.each(classCharlies, function (index, value) {
+    $("body").append(
+      '  <div class="card game-card"> <div class="card-header">Game No. ' +
+        index +
+        '</div> <div class="card-body">    <a href="' +
+        value +
+        '">' +
+        value +
+        "</a>  </div></div> "
+    );
+  });
+  
+  // need functions to make row or column per x amount of cards
 
 });
-
-function generateCoolNameFacts(userName) {
-  let coolFacts = ''; 
-  
-  coolFacts = nameLength(userName);
-  coolFacts += " <br> " + nameStart(userName);
-  coolFacts += "<h1> " + nameEnd(userName) + "</h3>";
-  coolFacts += "<h1>"+ nameLuckyNums(userName) + "</h2>";
-
-  console.log("initialized the'm coolFacts variable: " + coolFacts); 
-
-  return coolFacts;
-}
-
-function nameLength(name) {
-  return "Your name is " + name.length + " letters long!"; 
-}
-
-function nameStart(name) {
-  return "the first letter of your name is " + name[0]
-}
-
-function nameEnd(name) {
-  
-  let lastIndex = name.length - 1
-
-  return "the last letter of your name is " + name[lastIndex]
-}
-
-function nameLuckyNums(name){
-
-  let luckyNum = name.length % 2
-  if (luckyNum ==1){
-    return "Your lucky numbers are odd"
-  }
-  else{
-    return "Your lucky numbers are even"
-  }
-}
