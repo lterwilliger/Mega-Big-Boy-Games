@@ -27,7 +27,6 @@ body{
 
 
 
-
 #img-card{
   padding-top:4mm;
   margin-top:8mm;
@@ -35,5 +34,9 @@ body{
 }
 
 .footer{
-  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
 }
