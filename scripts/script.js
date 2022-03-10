@@ -8,7 +8,7 @@ $(function () {
   ];
   
   $.each(classCharlies, function (index, value) {
-    $("body").append(
+    $("#cardOutput").append(
       '  <div class="card game-card"> <div class="card-header">Game No. ' +
         index +
         '</div> <div class="card-body">    <a href="' +
