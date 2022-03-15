@@ -6,7 +6,7 @@ $(function () {
     // create a brand new HTML element JUST with code
     var el = `<div class='card text-center mx-auto bg-dark blue' style="width: 200px"> 
   <button class='cardOpen2 btn btn-outline-info'> ${item.title} </button> 
-   <div class='cardHide'> 
+   <div class='card'> 
        <br> 
        <a href="${item.link}" target="_blank" class="link-info" >GAME LINK</a> 
        <p class="text-white">Create by: ${item.author} </p> 
@@ -16,6 +16,6 @@ $(function () {
  </div>`;
 
     $("#cardOutput").append(el);
-    $(".nav-dropdown").append($(`<li><a href="#!"> ${item.author} </a></li>`));
+ 
   });
 });
