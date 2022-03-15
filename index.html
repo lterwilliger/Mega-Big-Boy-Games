@@ -11,34 +11,35 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
+<nav class="navbar navbar-expand-sm" id="navbar">
+    <div class="container-fluid">
+       
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" 
+              data-bs-toggle="dropdown" 
+              >Who are The Big Boys?</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://github.com/Akennemer/fox-wedding" target="_blank" >Ashe</a></li>
+              <li><a class="dropdown-item" href="https://lterwilliger.github.io/automatic-octo-eureka-foxtrot/"target="_blank" >Luke</a></li>
+              <li><a class="dropdown-item" href="https://errorless-stone.github.io/cumbie-foxtrot/"target="_blank" >Andrew</a></li>
+              <li><a class="dropdown-item" href="https://laurenmalone01.github.io/foxtrot-midterm/"target="_blank" >Lauren</a></li>
+              </ul>
+          </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page Validity</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   
   
 <!-- Container for cards goes here before footer   -->
-  <div class ="row" id="cardOutput" name="cardOutput">
+  <div class ="row" id="cardOutput">
 </div>
   
 <footer class="footer mt-auto py-3 bg-light">
