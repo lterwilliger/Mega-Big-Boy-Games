@@ -15,7 +15,7 @@ $(function () {
    </div>
  </div>`;
 
-    $("#cards").append(el);
+    $("#cardOutput").append(el);
     $(".nav-dropdown").append($(`<li><a href="#!"> ${item.author} </a></li>`));
   });
 });
