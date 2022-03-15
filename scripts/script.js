@@ -1,4 +1,4 @@
-import { games } from "./config.js";
+import { games } from "./peoplecode.js";
 
 $(function () {
   // iterate over the JSON array
